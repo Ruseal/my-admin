@@ -1,6 +1,7 @@
 <template>
   <div class="right-list">
     <el-card class="box-card">
+
       <!-- -----面包屑---- -->
       <my-breadcrumb :level="['首页', '权限管理', '权限列表']" />
       <!-- ---------表格---------->
@@ -13,7 +14,7 @@
           <template slot-scope="scope">
             <span v-if="scope.row.level==='0'">一级</span>
             <span v-else-if="scope.row.level==='1'">二级</span>
-            <span v-else-if="scope.row.level==='2'">三级</span>
+            <span v-else-if="scope.row.level==='2'">三</span>
           </template>
         </el-table-column>
       </el-table>
