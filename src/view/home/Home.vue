@@ -63,6 +63,7 @@ export default {
     async getMenus() {
       const res = await this.$http.get(`menus`);
 			// text1
+			// text2
       this.menuList = res.data.data;
     },
     exitLogin() {
